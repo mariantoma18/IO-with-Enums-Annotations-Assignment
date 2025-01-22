@@ -1,5 +1,9 @@
 package org.example;
 
+/*
+This class represent an athlete from biathlon competition;
+In this class are stored infos about the athlete which will be processed later
+ */
 public class Athlete implements Comparable<Athlete> {
 
   private String athleteNumber;
@@ -29,6 +33,82 @@ public class Athlete implements Comparable<Athlete> {
     this.firstShootingResult = firstShootingResult;
     this.secondShootingResult = secondShootingResult;
     this.thirdShootingResult = thirdShootingResult;
+  }
+
+  public String getAthleteNumber() {
+    return athleteNumber;
+  }
+
+  public void setAthleteNumber(String athleteNumber) {
+    this.athleteNumber = athleteNumber;
+  }
+
+  public String getAthleteName() {
+    return athleteName;
+  }
+
+  public void setAthleteName(String athleteName) {
+    this.athleteName = athleteName;
+  }
+
+  public String getCountryCode() {
+    return countryCode;
+  }
+
+  public void setCountryCode(String countryCode) {
+    this.countryCode = countryCode;
+  }
+
+  public String getSkiTimeResult() {
+    return skiTimeResult;
+  }
+
+  public void setSkiTimeResult(String skiTimeResult) {
+    this.skiTimeResult = skiTimeResult;
+  }
+
+  public String getFinalTimeResult() {
+    return finalTimeResult;
+  }
+
+  public void setFinalTimeResult(String finalTimeResult) {
+    this.finalTimeResult = finalTimeResult;
+  }
+
+  public String getFirstShootingResult() {
+    return firstShootingResult;
+  }
+
+  public void setFirstShootingResult(String firstShootingResult) {
+    this.firstShootingResult = firstShootingResult;
+  }
+
+  public String getSecondShootingResult() {
+    return secondShootingResult;
+  }
+
+  public void setSecondShootingResult(String secondShootingResult) {
+    this.secondShootingResult = secondShootingResult;
+  }
+
+  public String getThirdShootingResult() {
+    return thirdShootingResult;
+  }
+
+  public void setThirdShootingResult(String thirdShootingResult) {
+    this.thirdShootingResult = thirdShootingResult;
+  }
+
+  public int getTotalTimeInSeconds() {
+    return totalTimeInSeconds;
+  }
+
+  public int getPenaltySeconds() {
+    return penaltySeconds;
+  }
+
+  public Position getPosition() {
+    return position;
   }
 
   public void setTotalTimeInSeconds(int totalTimeInSeconds) {
